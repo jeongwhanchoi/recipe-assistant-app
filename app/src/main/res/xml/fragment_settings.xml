@@ -1,0 +1,14 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <CheckBoxPreference
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:defaultValue="true"
+            android:key="pref_enable_push_notifications"
+            android:summary="@string/pref_enable_push_notifications_summery"
+            android:title="@string/pref_enable_push_notifications_title" />
+
+</PreferenceScreen>

@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:gravity="bottom">
+
+    <TextView
+        android:id="@+id/recipe_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/gradient_bg"
+        android:padding="16dp"
+        android:gravity="start"
+        android:textDirection="locale"
+        android:textAlignment="gravity"
+        android:textColor="@color/md_white_1000"
+        android:textSize="24sp" />
+
+    <com.mikepenz.iconics.view.IconicsImageView
+        android:id="@+id/recipe_favorite"
+        android:layout_width="24sp"
+        android:layout_height="24sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        app:iiv_color="@color/colorAccent"
+        app:iiv_icon="@string/faw_star_o" />
+</RelativeLayout>

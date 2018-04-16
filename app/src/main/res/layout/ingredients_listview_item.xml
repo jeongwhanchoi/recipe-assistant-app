@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.nhaarman.listviewanimations.itemmanipulation.dragdrop.GripView
+        android:id="@+id/list_row_draganddrop_touchview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:color="@android:color/darker_gray"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="0dp"
+        android:paddingTop="8dp" />
+
+
+    <CheckBox
+        android:id="@+id/list_row_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="16dp"
+        android:checked="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/list_row_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="16dp"
+                android:layout_toLeftOf="@+id/shoppingcart"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="roboto-regular"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="16sp"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:id="@+id/shoppingcart"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="14dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:paddingBottom="14dp"
+                android:paddingRight="16dp"
+                android:textColor="@drawable/button_color"
+                android:textSize="22dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

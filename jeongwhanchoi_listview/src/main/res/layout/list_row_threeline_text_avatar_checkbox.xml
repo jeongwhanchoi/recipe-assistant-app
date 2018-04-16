@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="88dp">
+
+    <com.nhaarman.listviewanimations.itemmanipulation.dragdrop.GripView
+        android:id="@+id/list_row_draganddrop_touchview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:color="@android:color/darker_gray"
+        android:paddingBottom="4dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="0dp"
+        android:paddingTop="4dp" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/list_row_avatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/profile1" />
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@+id/list_row_checkbox"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+            <TextView
+                android:id="@+id/list_row_textview1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="roboto-regular"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/list_row_textview2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="roboto-regular"
+                android:lines="2"
+                android:maxLines="2"
+                android:textColor="?android:attr/textColorSecondary"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/list_row_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:checked="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+    </RelativeLayout>
+</LinearLayout>

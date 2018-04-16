@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0068FF</color>
+    <color name="colorPrimaryDark">#CBCBCB</color>
+    <color name="colorAccent">#FF4011</color>
+
+    <color name="color_premium_background">#ff3E4651</color>
+    <color name="color_recipe_list_background">#ffffffff</color>
+    <color name="color_recipe_card_background">#ffffffff</color>
+
+    <color name="colorWhite">#F7f7f7</color>
+    <color name="colorText">#212121</color>
+    <color name="colorSecondaryText">#757575</color>
+    <color name="colorDivider">#e1e1e1</color>
+    <color name="colorNutritionBackground">#fafafa</color>
+    <color name="colorNutritionBackgroundHeader">#ededed</color>
+    <color name="colorNutritionBackgroundHeaderRight">#c7c7c7</color>
+</resources>

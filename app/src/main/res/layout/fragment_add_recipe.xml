@@ -1,0 +1,564 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.mikepenz.iconics.view.IconicsButton
+                android:id="@+id/action_undo"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:text="{faw-undo}"
+                android:textColor="@color/colorWhite" />
+
+            <com.mikepenz.iconics.view.IconicsButton
+                android:id="@+id/action_redo"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:text="{faw-repeat}"
+                android:textColor="@color/colorWhite" />
+
+            <com.mikepenz.iconics.view.IconicsButton
+                android:id="@+id/action_bold"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:text="{faw-bold}"
+                android:textColor="@color/colorWhite" />
+
+            <com.mikepenz.iconics.view.IconicsButton
+                android:id="@+id/action_italic"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:text="{faw-italic}"
+                android:textColor="@color/colorWhite" />
+
+
+            <com.mikepenz.iconics.view.IconicsButton
+                android:id="@+id/action_subscript"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:text="{faw-subscript}"
+                android:textColor="@color/colorWhite" />
+
+            <com.mikepenz.iconics.view.IconicsButton
+                android:id="@+id/action_superscript"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:text="{faw-superscript}"
+                android:textColor="@color/colorWhite" />
+
+            <com.mikepenz.iconics.view.IconicsButton
+                android:id="@+id/action_strikethrough"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:text="{faw-strikethrough}"
+                android:textColor="@color/colorWhite" />
+
+            <com.mikepenz.iconics.view.IconicsButton
+                android:id="@+id/action_underline"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:text="{faw-underline}"
+                android:textColor="@color/colorWhite" />
+
+
+            <com.mikepenz.iconics.view.IconicsButton
+                android:id="@+id/action_bg_color"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:text="{faw-tint}"
+                android:textColor="@color/colorWhite" />
+
+
+            <com.mikepenz.iconics.view.IconicsButton
+                android:id="@+id/action_indent"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:text="{faw-indent}"
+                android:textColor="@color/colorWhite" />
+
+            <com.mikepenz.iconics.view.IconicsButton
+                android:id="@+id/action_outdent"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:text="{faw-outdent}"
+                android:textColor="@color/colorWhite" />
+
+            <com.mikepenz.iconics.view.IconicsButton
+                android:id="@+id/action_align_left"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:text="{faw-outdent}"
+                android:textColor="@color/colorWhite" />
+
+            <com.mikepenz.iconics.view.IconicsButton
+                android:id="@+id/action_align_center"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:text="{faw-align-center}"
+                android:textColor="@color/colorWhite" />
+
+            <com.mikepenz.iconics.view.IconicsButton
+                android:id="@+id/action_align_right"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:text="{faw-align-right}"
+                android:textColor="@color/colorWhite" />
+
+            <com.mikepenz.iconics.view.IconicsButton
+                android:id="@+id/action_insert_bullets"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:text="{faw-list-ul}"
+                android:textColor="@color/colorWhite" />
+
+            <com.mikepenz.iconics.view.IconicsButton
+                android:id="@+id/action_insert_numbers"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:text="{faw-list-ol}"
+                android:textColor="@color/colorWhite" />
+
+            <com.mikepenz.iconics.view.IconicsButton
+                android:id="@+id/action_blockquote"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:text="{faw-quote-left}"
+                android:textColor="@color/colorWhite" />
+
+            <com.mikepenz.iconics.view.IconicsButton
+                android:id="@+id/action_insert_image"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:text="{faw-picture-o}"
+                android:textColor="@color/colorWhite" />
+
+            <com.mikepenz.iconics.view.IconicsButton
+                android:id="@+id/action_insert_link"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:text="{faw-link}"
+                android:textColor="@color/colorWhite" />
+
+            <ImageButton
+                android:id="@+id/action_insert_checkbox"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:src="@android:drawable/checkbox_on_background"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@color/md_white_1000"
+            android:orientation="vertical">
+
+            <com.mikepenz.iconics.view.IconicsImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center_vertical"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:scaleType="centerCrop"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="20dp"
+                app:iiv_icon="@string/faw_picture_o" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.mikepenz.iconics.view.IconicsTextView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@null"
+                    android:contentDescription="@null"
+                    android:text="{faw-header}"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/recipe_name"
+                    android:lines="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.mikepenz.iconics.view.IconicsTextView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@null"
+                    android:contentDescription="@null"
+                    android:text="{faw-tags}"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textSize="20dp" />
+
+                <Spinner
+                    android:id="@+id/category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:prompt="@string/recipe_category" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivider" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="8dp"
+                android:text="@string/recipe_ingredients"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.mikepenz.iconics.view.IconicsButton
+                    android:id="@+id/add_ingredient"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@null"
+                    android:contentDescription="@null"
+                    android:text="{faw-plus}"
+                    android:textColor="@color/colorText"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/new_ingredient"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:hint="@string/recipe_new_ingredient"
+                    android:lines="1" />
+            </LinearLayout>
+
+            <com.jeongwhanchoi.jeongwhanchoi_listview.NDListview
+                android:id="@+id/listview_ingredients"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="@dimen/paddingTop"
+                android:clipToPadding="false"
+                android:divider="@null"
+                android:paddingBottom="48dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivider" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="8dp"
+                android:text="@string/recipe_directions"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="14sp" />
+
+
+            <jp.wasabeef.richeditor.RichEditor
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/recipe_directions"
+                android:minHeight="100dp" />
+
+            <!--general details-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivider" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="8dp"
+                android:text="@string/recipe_details"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/preparation_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/recipe_preparation_time"
+                    android:inputType="number"
+                    android:lines="1" />
+                <EditText
+                    android:id="@+id/cooking_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/recipe_cooking_time"
+                    android:inputType="number"
+                    android:lines="1" />
+                <EditText
+                    android:id="@+id/difficulty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/recipe_difficulty"
+                    android:inputType="number"
+                    android:lines="1" />
+            </LinearLayout>
+
+
+            <!--Nutritional details-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivider" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="8dp"
+                android:text="@string/nutrition_title"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="14sp" />
+
+            <Switch
+                android:id="@+id/nutrition_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:hint="@string/recipe_enable_nutrition" />
+
+            <LinearLayout
+                android:id="@+id/nutrition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/calories"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/calories"
+                    android:inputType="number"
+                    android:lines="1" />
+
+                <EditText
+                    android:id="@+id/calories_from_fat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/calories_from_fat"
+                    android:inputType="number"
+                    android:lines="1" />
+
+                <EditText
+                    android:id="@+id/total_fat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/total_fat"
+                    android:inputType="number"
+                    android:lines="1" />
+
+                <EditText
+                    android:id="@+id/saturated_fat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/saturated_fat"
+                    android:inputType="number"
+                    android:lines="1" />
+
+                <EditText
+                    android:id="@+id/trans_fat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/trans_fat"
+                    android:inputType="number"
+                    android:lines="1" />
+
+                <EditText
+                    android:id="@+id/cholesterol"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/cholesterol"
+                    android:inputType="number"
+                    android:lines="1" />
+
+                <EditText
+                    android:id="@+id/sodium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/sodium"
+                    android:inputType="number"
+                    android:lines="1" />
+
+                <EditText
+                    android:id="@+id/protein"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/protein"
+                    android:inputType="number"
+                    android:lines="1" />
+
+                <EditText
+                    android:id="@+id/total_carbohydrate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/total_carbohydrate"
+                    android:inputType="number"
+                    android:lines="1" />
+
+                <EditText
+                    android:id="@+id/dietary_fiber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/dietary_fiber"
+                    android:inputType="number"
+                    android:lines="1" />
+
+                <EditText
+                    android:id="@+id/sugars"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/sugars"
+                    android:inputType="number"
+                    android:lines="1" />
+
+                <EditText
+                    android:id="@+id/vitamin_a_percent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/vitamin_a"
+                    android:inputType="number"
+                    android:lines="1" />
+
+                <EditText
+                    android:id="@+id/vitamin_c_percent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/vitamin_c"
+                    android:inputType="number"
+                    android:lines="1" />
+
+                <EditText
+                    android:id="@+id/calcium_percent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/calcium"
+                    android:inputType="number"
+                    android:lines="1" />
+
+                <EditText
+                    android:id="@+id/iron_percent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/iron"
+                    android:inputType="number"
+                    android:lines="1" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submit"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/recipe_submit" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
