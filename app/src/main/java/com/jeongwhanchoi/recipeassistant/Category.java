@@ -32,7 +32,7 @@ public class Category {
     /**
      * Listens for when categories are downloaded
      */
-    interface onCategoriesDownloadedListener {
+    public interface onCategoriesDownloadedListener {
         void onCategoriesDownloaded(List<Category> categories);
     }
 
@@ -40,7 +40,7 @@ public class Category {
     /**
      * Listens for when the category name is downloaded
      */
-    interface onNameFoundListener {
+    public interface onNameFoundListener {
         void onNameFound(String name);
     }
 

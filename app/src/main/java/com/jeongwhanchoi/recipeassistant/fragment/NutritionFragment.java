@@ -1,4 +1,4 @@
-package com.jeongwhanchoi.recipeassistant;
+package com.jeongwhanchoi.recipeassistant.fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -6,6 +6,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.jeongwhanchoi.recipeassistant.Configurations;
+import com.jeongwhanchoi.recipeassistant.R;
+import com.jeongwhanchoi.recipeassistant.Recipe;
 
 /**
  * Created by jeongwhanchoi on 28/09/2016.

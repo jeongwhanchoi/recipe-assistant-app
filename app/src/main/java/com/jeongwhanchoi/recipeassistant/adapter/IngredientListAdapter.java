@@ -1,4 +1,4 @@
-package com.jeongwhanchoi.recipeassistant;
+package com.jeongwhanchoi.recipeassistant.adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -8,6 +8,9 @@ import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
+import com.jeongwhanchoi.recipeassistant.FontManager;
+import com.jeongwhanchoi.recipeassistant.IngredientItem;
+import com.jeongwhanchoi.recipeassistant.R;
 import com.nhaarman.listviewanimations.ArrayAdapter;
 import com.nhaarman.listviewanimations.itemmanipulation.dragdrop.GripView;
 import com.nhaarman.listviewanimations.itemmanipulation.swipedismiss.undo.UndoAdapter;

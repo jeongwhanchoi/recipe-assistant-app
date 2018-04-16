@@ -16,7 +16,7 @@ import com.android.volley.toolbox.Volley;
  */
 public class Preference {
 
-    interface onPreferenceDownloadedListener {
+    public interface onPreferenceDownloadedListener {
         void onPreferenceDownloaded(String string);
     }
 

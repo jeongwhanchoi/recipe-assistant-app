@@ -1,4 +1,4 @@
-package com.jeongwhanchoi.recipeassistant;
+package com.jeongwhanchoi.recipeassistant.fragment;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -15,6 +15,8 @@ import android.widget.ProgressBar;
 import com.jeongwhanchoi.jeongwhanchoi_listview.NDListview;
 import com.jeongwhanchoi.jeongwhanchoi_listview.SingleLineItem;
 import com.jeongwhanchoi.jeongwhanchoi_listview.SingleLineListAdapter;
+import com.jeongwhanchoi.recipeassistant.Category;
+import com.jeongwhanchoi.recipeassistant.R;
 
 import java.util.List;
 

@@ -17,7 +17,7 @@ public class IngredientItem {
 
     public String text1;
     public CompoundButton.OnCheckedChangeListener onCheckedChangeListener;
-    TextView.OnClickListener onCartClickListener;
+    public TextView.OnClickListener onCartClickListener;
     public int id;
 
     public boolean isSection = false;

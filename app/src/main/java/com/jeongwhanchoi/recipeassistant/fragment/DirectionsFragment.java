@@ -1,4 +1,4 @@
-package com.jeongwhanchoi.recipeassistant;
+package com.jeongwhanchoi.recipeassistant.fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -7,6 +7,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.widget.TextView;
+
+import com.jeongwhanchoi.recipeassistant.Functions;
+import com.jeongwhanchoi.recipeassistant.R;
+import com.jeongwhanchoi.recipeassistant.Recipe;
 
 /**
  * Created by jeongwhanchoi on 11/04/2018.

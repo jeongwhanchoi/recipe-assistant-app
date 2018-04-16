@@ -1,8 +1,9 @@
-package com.jeongwhanchoi.recipeassistant;
+package com.jeongwhanchoi.recipeassistant.fragment;
 
 import android.os.Bundle;
-import android.preference.Preference;
 import android.preference.PreferenceFragment;
+
+import com.jeongwhanchoi.recipeassistant.R;
 
 /**
  * Created by jeongwhanchoi on 11/04/2018.

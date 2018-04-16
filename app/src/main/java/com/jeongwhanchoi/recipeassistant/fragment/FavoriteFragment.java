@@ -1,4 +1,4 @@
-package com.jeongwhanchoi.recipeassistant;
+package com.jeongwhanchoi.recipeassistant.fragment;
 
 import android.content.Context;
 import android.content.Intent;
@@ -14,6 +14,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.RelativeLayout;
+
+import com.jeongwhanchoi.recipeassistant.Configurations;
+import com.jeongwhanchoi.recipeassistant.EmptyRecyclerView;
+import com.jeongwhanchoi.recipeassistant.R;
+import com.jeongwhanchoi.recipeassistant.Recipe;
+import com.jeongwhanchoi.recipeassistant.adapter.RecipeAdapter;
+import com.jeongwhanchoi.recipeassistant.SingleRecipeActivity;
 
 import java.util.List;
 

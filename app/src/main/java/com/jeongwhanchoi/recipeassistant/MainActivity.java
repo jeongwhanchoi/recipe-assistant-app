@@ -2,18 +2,23 @@ package com.jeongwhanchoi.recipeassistant;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.widget.LinearLayout;
 
 //import com.google.firebase.messaging.FirebaseMessaging;
+import com.jeongwhanchoi.recipeassistant.fragment.AddRecipeFragment;
+import com.jeongwhanchoi.recipeassistant.fragment.CategoriesFragment;
+import com.jeongwhanchoi.recipeassistant.fragment.CategoryRecipesFragment;
+import com.jeongwhanchoi.recipeassistant.fragment.CategoryTextAndImageFragment;
+import com.jeongwhanchoi.recipeassistant.fragment.FavoriteFragment;
+import com.jeongwhanchoi.recipeassistant.fragment.HomeFragment;
+import com.jeongwhanchoi.recipeassistant.fragment.InfoFragment;
+import com.jeongwhanchoi.recipeassistant.fragment.ShoppingListFragment;
 import com.mikepenz.fontawesome_typeface_library.FontAwesome;
 import com.mikepenz.materialdrawer.Drawer;
 import com.mikepenz.materialdrawer.DrawerBuilder;

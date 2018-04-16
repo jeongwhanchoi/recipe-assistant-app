@@ -25,6 +25,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.ecloud.pulltozoomview.PullToZoomScrollViewEx;
+import com.jeongwhanchoi.recipeassistant.fragment.DirectionsFragment;
+import com.jeongwhanchoi.recipeassistant.fragment.IngredientsFragment;
+import com.jeongwhanchoi.recipeassistant.fragment.NutritionFragment;
 import com.mikepenz.fontawesome_typeface_library.FontAwesome;
 import com.mikepenz.iconics.IconicsDrawable;
 import com.mikepenz.iconics.view.IconicsImageView;

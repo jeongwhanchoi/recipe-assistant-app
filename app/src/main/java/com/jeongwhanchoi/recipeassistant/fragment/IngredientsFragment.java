@@ -1,4 +1,4 @@
-package com.jeongwhanchoi.recipeassistant;
+package com.jeongwhanchoi.recipeassistant.fragment;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -13,6 +13,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.jeongwhanchoi.jeongwhanchoi_listview.NDListview;
+import com.jeongwhanchoi.recipeassistant.FontManager;
+import com.jeongwhanchoi.recipeassistant.IngredientItem;
+import com.jeongwhanchoi.recipeassistant.adapter.IngredientListAdapter;
+import com.jeongwhanchoi.recipeassistant.R;
+import com.jeongwhanchoi.recipeassistant.Recipe;
 
 /**
  * Created by jeongwhanchoi on 11/04/2018.

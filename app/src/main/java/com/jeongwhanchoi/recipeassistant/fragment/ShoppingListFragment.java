@@ -1,4 +1,4 @@
-package com.jeongwhanchoi.recipeassistant;
+package com.jeongwhanchoi.recipeassistant.fragment;
 
 import android.app.Activity;
 import android.content.Context;
@@ -16,6 +16,10 @@ import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 
 import com.gc.materialdesign.views.ButtonFloat;
+import com.jeongwhanchoi.recipeassistant.Alert;
+import com.jeongwhanchoi.recipeassistant.IngredientItem;
+import com.jeongwhanchoi.recipeassistant.R;
+import com.jeongwhanchoi.recipeassistant.adapter.ShoppingListAdapter;
 import com.mikepenz.fontawesome_typeface_library.FontAwesome;
 import com.mikepenz.iconics.IconicsDrawable;
 import com.jeongwhanchoi.jeongwhanchoi_listview.NDListview;

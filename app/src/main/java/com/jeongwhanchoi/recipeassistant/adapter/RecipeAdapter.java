@@ -1,4 +1,4 @@
-package com.jeongwhanchoi.recipeassistant;
+package com.jeongwhanchoi.recipeassistant.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.CardView;
@@ -10,6 +10,10 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.TextView;
 
+import com.jeongwhanchoi.recipeassistant.AspectRatioImageView;
+import com.jeongwhanchoi.recipeassistant.Configurations;
+import com.jeongwhanchoi.recipeassistant.R;
+import com.jeongwhanchoi.recipeassistant.Recipe;
 import com.mikepenz.iconics.view.IconicsTextView;
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.RequestCreator;
@@ -25,7 +29,7 @@ public class RecipeAdapter extends RecyclerView.Adapter<ViewHolder> {
     Context context;
     private AdapterView.OnItemClickListener onItemClickListener;
 
-    RecipeAdapter(List<Recipe> recipes, AdapterView.OnItemClickListener onItemClickListener, Context context) {
+    public RecipeAdapter(List<Recipe> recipes, AdapterView.OnItemClickListener onItemClickListener, Context context) {
         this.recipes = recipes;
         this.context = context;
         this.onItemClickListener = onItemClickListener;

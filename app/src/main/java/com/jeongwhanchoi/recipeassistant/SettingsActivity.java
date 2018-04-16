@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
+import com.jeongwhanchoi.recipeassistant.fragment.MyPreferenceFragment;
+
 /**
  * Settings activity which basically shows MyPreferenceFragment.
  * Done like this due to a limitation of PreferenceFragment

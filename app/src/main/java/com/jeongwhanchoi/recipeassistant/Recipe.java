@@ -43,11 +43,11 @@ public class Recipe {
     public final static int NUTR_ENABLE = 0, NUTR_CALORIES = 1, NUTR_CALORIES_FROM_FAT = 2, NUTR_TOTAL_FAT = 3, NUTR_SATURATED_FAT = 4, NUTR_TRANS_FAT = 5, NUTR_CHOLESTEROL = 6, NUTR_SODIUM = 7, NUTR_PROTEIN = 8, NUTR_TOTAL_CARBOHYDRATE = 9, NUTR_DIETARY_FIBER = 10, NUTR_SUGARS = 11, NUTR_VITAMIN_A = 12, NUTR_VITAMIN_C = 13, NUTR_CALCIUM = 14, NUTR_IRON = 15;
     public int[] nutrition = new int[16];
 
-    interface onRecipeDownloadedListener {
+    public interface onRecipeDownloadedListener {
         void onRecipeDownloaded(Recipe recipe);
     }
 
-    interface onRecipesDownloadedListener {
+    public interface onRecipesDownloadedListener {
         void onRecipesDownloaded(List<Recipe> recipes);
     }
 
