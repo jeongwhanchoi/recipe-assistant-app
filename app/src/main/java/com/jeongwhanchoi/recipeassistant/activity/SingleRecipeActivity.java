@@ -1,4 +1,4 @@
-package com.jeongwhanchoi.recipeassistant;
+package com.jeongwhanchoi.recipeassistant.activity;
 
 import android.app.Activity;
 import android.content.Context;
@@ -25,6 +25,10 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.ecloud.pulltozoomview.PullToZoomScrollViewEx;
+import com.jeongwhanchoi.recipeassistant.R;
+import com.jeongwhanchoi.recipeassistant.Recipe;
+import com.jeongwhanchoi.recipeassistant.WrapContentViewPager;
+import com.jeongwhanchoi.recipeassistant.listener.OnSwipeTouchListener;
 import com.jeongwhanchoi.recipeassistant.fragment.DirectionsFragment;
 import com.jeongwhanchoi.recipeassistant.fragment.IngredientsFragment;
 import com.jeongwhanchoi.recipeassistant.fragment.NutritionFragment;

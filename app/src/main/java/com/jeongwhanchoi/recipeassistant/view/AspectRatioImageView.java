@@ -1,4 +1,4 @@
-package com.jeongwhanchoi.recipeassistant;
+package com.jeongwhanchoi.recipeassistant.view;
 
 import android.content.Context;
 import android.util.AttributeSet;

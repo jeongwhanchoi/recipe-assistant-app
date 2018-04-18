@@ -16,7 +16,7 @@ import android.widget.RelativeLayout;
 
 import com.jeongwhanchoi.recipeassistant.Category;
 import com.jeongwhanchoi.recipeassistant.adapter.CategoryAdapter;
-import com.jeongwhanchoi.recipeassistant.EmptyRecyclerView;
+import com.jeongwhanchoi.recipeassistant.view.EmptyRecyclerView;
 import com.jeongwhanchoi.recipeassistant.R;
 
 import java.util.List;

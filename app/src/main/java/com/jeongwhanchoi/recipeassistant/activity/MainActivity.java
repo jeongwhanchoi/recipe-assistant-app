@@ -1,4 +1,4 @@
-package com.jeongwhanchoi.recipeassistant;
+package com.jeongwhanchoi.recipeassistant.activity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,6 +10,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
+import com.jeongwhanchoi.recipeassistant.Category;
+import com.jeongwhanchoi.recipeassistant.Configurations;
+import com.jeongwhanchoi.recipeassistant.R;
 import com.jeongwhanchoi.recipeassistant.fragment.AddRecipeFragment;
 import com.jeongwhanchoi.recipeassistant.fragment.CategoriesFragment;
 import com.jeongwhanchoi.recipeassistant.fragment.CategoryRecipesFragment;

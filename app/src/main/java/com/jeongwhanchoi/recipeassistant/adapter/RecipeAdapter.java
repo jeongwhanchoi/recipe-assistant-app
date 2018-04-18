@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.TextView;
 
-import com.jeongwhanchoi.recipeassistant.AspectRatioImageView;
+import com.jeongwhanchoi.recipeassistant.view.AspectRatioImageView;
 import com.jeongwhanchoi.recipeassistant.Configurations;
 import com.jeongwhanchoi.recipeassistant.R;
 import com.jeongwhanchoi.recipeassistant.Recipe;

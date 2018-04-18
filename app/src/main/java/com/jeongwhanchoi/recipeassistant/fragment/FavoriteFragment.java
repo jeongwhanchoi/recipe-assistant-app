@@ -16,11 +16,11 @@ import android.widget.AdapterView;
 import android.widget.RelativeLayout;
 
 import com.jeongwhanchoi.recipeassistant.Configurations;
-import com.jeongwhanchoi.recipeassistant.EmptyRecyclerView;
+import com.jeongwhanchoi.recipeassistant.view.EmptyRecyclerView;
 import com.jeongwhanchoi.recipeassistant.R;
 import com.jeongwhanchoi.recipeassistant.Recipe;
 import com.jeongwhanchoi.recipeassistant.adapter.RecipeAdapter;
-import com.jeongwhanchoi.recipeassistant.SingleRecipeActivity;
+import com.jeongwhanchoi.recipeassistant.activity.SingleRecipeActivity;
 
 import java.util.List;
 

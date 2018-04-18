@@ -15,7 +15,7 @@
             android:layout_height="wrap_content">
 
 
-            <com.jeongwhanchoi.recipeassistant.AspectRatioImageView
+            <com.jeongwhanchoi.recipeassistant.view.AspectRatioImageView
                 android:id="@+id/recipe_image"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"

@@ -22,13 +22,13 @@ import android.widget.RelativeLayout;
 
 import com.jeongwhanchoi.recipeassistant.Category;
 import com.jeongwhanchoi.recipeassistant.Configurations;
-import com.jeongwhanchoi.recipeassistant.EmptyRecyclerView;
-import com.jeongwhanchoi.recipeassistant.EndlessRecyclerViewScrollListener;
-import com.jeongwhanchoi.recipeassistant.MainActivity;
+import com.jeongwhanchoi.recipeassistant.view.EmptyRecyclerView;
+import com.jeongwhanchoi.recipeassistant.listener.EndlessRecyclerViewScrollListener;
+import com.jeongwhanchoi.recipeassistant.activity.MainActivity;
 import com.jeongwhanchoi.recipeassistant.R;
 import com.jeongwhanchoi.recipeassistant.Recipe;
 import com.jeongwhanchoi.recipeassistant.adapter.RecipeAdapter;
-import com.jeongwhanchoi.recipeassistant.SingleRecipeActivity;
+import com.jeongwhanchoi.recipeassistant.activity.SingleRecipeActivity;
 import com.mikepenz.fontawesome_typeface_library.FontAwesome;
 import com.mikepenz.iconics.IconicsDrawable;
 

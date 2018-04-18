@@ -1,4 +1,4 @@
-package com.jeongwhanchoi.recipeassistant;
+package com.jeongwhanchoi.recipeassistant.listener;
 
 import android.content.Context;
 import android.view.GestureDetector;

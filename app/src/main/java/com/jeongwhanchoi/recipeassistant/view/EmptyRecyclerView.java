@@ -1,4 +1,4 @@
-package com.jeongwhanchoi.recipeassistant;
+package com.jeongwhanchoi.recipeassistant.view;
 
 /**
  * Created by melvin on 01/10/2016.
