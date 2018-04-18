@@ -36,7 +36,8 @@ public class Cache {
      * @return
      */
     public String load(String url) {
-        String key = getKey(url);
+//        String key = getKey(url);
+        String key = url;
         String ret = null;
 
         try {
@@ -73,7 +74,8 @@ public class Cache {
      * @param value
      */
     public void store(String url, String value) {
-        String key = getKey(url);
+//        String key = getKey(url);
+        String key = url;
         try {
             File cacheDir = context.getCacheDir();
             File file = new File(cacheDir, key + "data.bin");
@@ -85,26 +87,5 @@ public class Cache {
             Log.e("Exception", "File write failed: " + e.toString());
         }
 
-    }
-
-
-    /**
-     * convert a url to md5 so that the url can be used as a unique key.
-     *
-     * @param md5
-     * @return
-     */
-    public String getKey(String md5) {
-        try {
-            java.security.MessageDigest md = java.security.MessageDigest.getInstance("MD5");
-            byte[] array = md.digest(md5.getBytes());
-            StringBuffer sb = new StringBuffer();
-            for (int i = 0; i < array.length; ++i) {
-                sb.append(Integer.toHexString((array[i] & 0xFF) | 0x100).substring(1, 3));
-            }
-            return sb.toString();
-        } catch (java.security.NoSuchAlgorithmException e) {
-        }
-        return null;
     }
 }
