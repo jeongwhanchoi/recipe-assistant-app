@@ -55,46 +55,6 @@
 
         </activity>
 
-        <!--
-      Optionally, register AnalyticsReceiver and AnalyticsService to support background
-      dispatching on non-Google Play devices
- -->
-        <!--<receiver-->
-            <!--android:name="com.google.android.gms.analytics.AnalyticsReceiver"-->
-            <!--android:enabled="true">-->
-            <!--<intent-filter>-->
-                <!--<action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />-->
-            <!--</intent-filter>-->
-        <!--</receiver>-->
-
-        <!--<service-->
-            <!--android:name="com.google.android.gms.analytics.AnalyticsService"-->
-            <!--android:enabled="true"-->
-            <!--android:exported="false" />-->
-
-        <!--&lt;!&ndash;-->
-             <!--Optionally, register CampaignTrackingReceiver and CampaignTrackingService to enable-->
-             <!--installation campaign reporting-->
-        <!--&ndash;&gt;-->
-        <!--<receiver-->
-            <!--android:name="com.google.android.gms.analytics.CampaignTrackingReceiver"-->
-            <!--android:exported="true">-->
-            <!--<intent-filter>-->
-                <!--<action android:name="com.android.vending.INSTALL_REFERRER" />-->
-            <!--</intent-filter>-->
-        <!--</receiver>-->
-
-        <!--<service android:name="com.google.android.gms.analytics.CampaignTrackingService" />-->
-
-        <!--<meta-data-->
-            <!--android:name="com.google.android.gms.version"-->
-            <!--android:value="@integer/google_play_services_version" />-->
-
-        <!--&lt;!&ndash; Include the AdActivity configChanges and theme. &ndash;&gt;-->
-        <!--<activity-->
-            <!--android:name="com.google.android.gms.ads.AdActivity"-->
-            <!--android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"-->
-            <!--android:theme="@android:style/Theme.Translucent" />-->
     </application>
 
 </manifest>
