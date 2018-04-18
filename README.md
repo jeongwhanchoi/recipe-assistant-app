@@ -9,24 +9,24 @@
 - Material Drawer 외부 라이브러리를 사용하여 Navigation Drawer를 구현하였다. 메인페이지라는 Activity를 따로 두는 대신 Navigation을 사용하기로 결정하였다.
 - Navigation을 구현하기 위해 외부 라이브러리인 MaterialDrawer를 사용하였으며 `MainActivity`에서 `DrawerBuilder()`를 통해 Navigation을 생성하는 것을 확인할 수 있으며 switch-case 문을 통해 각 fragment 또는 activity로 이동하는 것을 볼 수 있다.
 
-![navigation](/Users/jeongwhanchoi/Study/3-1/Mobile App Programming/Project/Project_01/img/navigation.png)
+![navigation](./img/navigation.png)
 
 #### 2. 다양한 음식 메뉴 삽입
 
 - 기존에 있던 Irish Stew와 Simple Guacamole 레시피 말고도 다양한 음식 레시피를 MySQL 데이터베이스를 통해 추가하였다. 또한, favorite과 viewed의 카운트를 테이블 열로 추가하였다.
 
-![navigation](/Users/jeongwhanchoi/Study/3-1/Mobile App Programming/Project/Project_01/img/main.png)
+![navigation](./img/main.png)
 
 #### 3. 선호하는 음식 레시피 관리 기능
 
 - 아래 사진의 별표 모양을 누르게 되면 별 아이콘이 빨간색으로 채워진다. `SingleRecipeActivity.class`에서는 `favproteBtn`으로 별 아이콘을 설정하였다. 이 때, 별 아이콘은 Android-Iconics라는 외부 라이브러리를 사용하였다.
 
-![fav_02](/Users/jeongwhanchoi/Study/3-1/Mobile App Programming/Project/Project_01/img/fav_02.png)
+![fav_02](./img/fav_02.png)
 
 - Navigation을 통해 Favorites으로 이동하면 해당 Fragment에서 Favorite을 선택한 레시피를 볼 수 있다.
   - `FavoriteFragment.java` 를 통해 확인할 수 있다.
 
-![fav_04](/Users/jeongwhanchoi/Study/3-1/Mobile App Programming/Project/Project_01/img/fav_04.png)
+![fav_04](./img/fav_04.png)
 
 ### 개선 아이디어
 
@@ -34,9 +34,9 @@
 
 - `HomeFragment.java`에서 `onCreateOptionsMenu()` 메소드를 통해서 구현 한 것을 확인할 수 있다.
 
-![search_01](/Users/jeongwhanchoi/Study/3-1/Mobile App Programming/Project/Project_01/img/search_01.png)
+![search_01](./img/search_01.png)
 
-![search_02](/Users/jeongwhanchoi/Study/3-1/Mobile App Programming/Project/Project_01/img/search_02.png)
+![search_02](./img/search_02.png)
 
 #### 2. 재료 쇼핑 리스트
 
@@ -44,29 +44,29 @@
 
 `ShoppingListFragment.java` 의 `createServingsPicker()` 메소드와  `IngredientsFragment.java` 클래스에서 확인할 수 있다.
 
-![shopping_02](/Users/jeongwhanchoi/Study/3-1/Mobile App Programming/Project/Project_01/img/shopping_02.png)
+![shopping_02](./img/shopping_02.png)
 
 - ListViewAnimations 외부 라이브러리를 사용하여 위의 쇼핑리스트에서 왼쪽으로 swipe하면 삭제가 가능하도록 구현하였다.
 
-![shopping_04](/Users/jeongwhanchoi/Study/3-1/Mobile App Programming/Project/Project_01/img/shopping_04.png)
+![shopping_04](./img/shopping_04.png)
 
 #### 3. 인원에 따른 재료량 변경
 
 `ShoppingListFragment.java` 의 `setServings()` 메소드와 `Recipe.java` 클래스의 `calculateServings()` 메소드에서 확인할 수 있다.
 
-![serving_01](/Users/jeongwhanchoi/Study/3-1/Mobile App Programming/Project/Project_01/img/serving_01.png)
+![serving_01](./img/serving_01.png)
 
-![serving_02](/Users/jeongwhanchoi/Study/3-1/Mobile App Programming/Project/Project_01/img/serving_02.png)
+![serving_02](./img/serving_02.png)
 
-![serving_03](/Users/jeongwhanchoi/Study/3-1/Mobile App Programming/Project/Project_01/img/serving_03.png)
+![serving_03](./img/serving_03.png)
 
 #### 4. 공유 기능
 
 `SingleRecipeActivity.java`의 `onCreateOptionsMenu()`와 `onOptionsItemSelected()`의 메소드, 그리고 `Recipe.java`의 `share()` 메소드에서 확인할 수 있다.
 
-![share_01](/Users/jeongwhanchoi/Study/3-1/Mobile App Programming/Project/Project_01/img/share_01.png)
+![share_01](./img/share_01.png)
 
-![share_02](/Users/jeongwhanchoi/Study/3-1/Mobile App Programming/Project/Project_01/img/share_02.png)
+![share_02](./img/share_02.png)
 
 
 
@@ -74,27 +74,26 @@
 
 `CategoriesFragment.java`와 `CategoryRecipesFragment.java`, `CategpruTextAndImageFragment.java` 클래스에서 확인할 수 있다.
 
-![category](/Users/jeongwhanchoi/Study/3-1/Mobile App Programming/Project/Project_01/img/category.png)
+![category](./img/category.png)
 
 #### 6. 영양분 표시
 
 `NutritionFragment.java` 클래스와 `SingleRecipeActivity.java`의 `setupViewPager()` 메소드에서 확인할 수 있다.
 
-![nutrition](/Users/jeongwhanchoi/Study/3-1/Mobile App Programming/Project/Project_01/img/nutrition.png)
+![nutrition](./img/nutrition.png)
 
 #### 7. Fragments간 swipe gesture로 이동
 
 - 단일 레시피 화면에서 재료 fragment와 재료 fragment 간에 swipe 제스처로 이동
 - `SingleRecipeActivity.java` 클래스에서 `recipeImage.setOnTouchListener()` 안에 오버라이딩된 `onSwipeLeft()` 와 `onSwipeRight()`의 메소드에서 확인할 수 있다.
-  - case
 
-![gesture_swipe](/Users/jeongwhanchoi/Study/3-1/Mobile App Programming/Project/Project_01/img/gesture_swipe.png)
+![gesture_swipe](./img/gesture_swipe.png)
 
 ## 구현 방법
 
 ### CPanel
 
-![cpanel_domain](/Users/jeongwhanchoi/Study/3-1/Mobile App Programming/Project/Project_01/img/cpanel_domain.png)
+![cpanel_domain](./img/cpanel_domain.png)
 
 
 
@@ -104,17 +103,17 @@
 
 MySQL에 다음과 같이 테이블을 만든다.
 
-![create_database](/Users/jeongwhanchoi/Desktop/create_database.png)
+![create_database](./img/create_database.png)
 
 아래 캡처는 레시피 데이터들이 입력된 상태이다.
 
-![Screen Shot 2018-04-18 at 10.49.34 PM](/Users/jeongwhanchoi/Desktop/Screen Shot 2018-04-18 at 10.49.34 PM.png)
+![Screen Shot 2018-04-18 at 10.49.34 PM](./img/database.png)
 
 ### PHP
 
 ##### FileZilla 이용하여 php파일 저장
 
-![php_filezila](/Users/jeongwhanchoi/Study/3-1/Mobile App Programming/Project/Project_01/img/php_filezila.png)
+![php_filezila](./img/php_filezila.png)
 
 
 
