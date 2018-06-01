@@ -6,4 +6,9 @@
         android:icon="@android:drawable/ic_menu_share"
         android:title="@string/share_icon_title"
         app:showAsAction="collapseActionView|ifRoom" />
+    <item
+        android:id="@+id/timer"
+        android:icon="@android:drawable/ic_lock_idle_alarm"
+        app:showAsAction="collapseActionView|ifRoom"
+        android:title="" />
 </menu>

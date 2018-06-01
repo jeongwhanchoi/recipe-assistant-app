@@ -312,6 +312,13 @@ public class SingleRecipeActivity extends AppCompatActivity {
                         .icon(FontAwesome.Icon.faw_share_alt)
                         .color(ContextCompat.getColor(context, R.color.md_white_1000))
                         .sizeDp(18));
+
+        menu.findItem(R.id.timer).setIcon(
+                new IconicsDrawable(context)
+                        .icon(FontAwesome.Icon.faw_clock_o)
+                        .color(ContextCompat.getColor(context, R.color.md_white_1000))
+                        .sizeDp(18));
+
         return true;
     }
 
