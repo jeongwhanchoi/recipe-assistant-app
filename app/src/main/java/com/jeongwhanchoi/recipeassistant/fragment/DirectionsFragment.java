@@ -10,7 +10,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.jeongwhanchoi.recipeassistant.MyService;
 import com.jeongwhanchoi.recipeassistant.Functions;
 import com.jeongwhanchoi.recipeassistant.R;
 import com.jeongwhanchoi.recipeassistant.Recipe;
@@ -90,13 +92,24 @@ public class DirectionsFragment extends Fragment {
 
         cookingTime_textview.setOnClickListener(new View.OnClickListener()
         {
+            int isOn = 1;
             @Override
             public void onClick(View v)
             {
                 if(time > 0)
                 {
-                    startTimerActivity(time* 60);
+//                    startTimerActivity(time* 60);
 //                startTimerActivity(10 * 60);
+                    if(isOn == 0) {
+//                        Toast.makeText(getActivity().getApplicationContext(), "Service End", Toast.LENGTH_SHORT).show();
+                        isOn = 1;
+                        getActivity().stopService(new Intent(getActivity(), MyService.class));
+                    }
+                    else{
+                        Toast.makeText(getActivity().getApplicationContext(), "Cooking Start", Toast.LENGTH_SHORT).show();
+                        isOn = 0;
+                        getActivity().startService(new Intent(getActivity(), MyService.class));
+                    }
                 }
             }
         });
@@ -135,6 +148,17 @@ public class DirectionsFragment extends Fragment {
                 // can't start activity
             }
         }
+    }
+
+    public int getTimeForTimer(){
+        //load recipe
+        Recipe.loadRecipe(getActivity(), recipeId, new Recipe.onRecipeDownloadedListener() {
+            @Override
+            public void onRecipeDownloaded(Recipe recipe) {
+                time = recipe.cook_time;
+            }
+        });
+        return time;
     }
 
 }
