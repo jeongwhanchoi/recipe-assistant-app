@@ -56,7 +56,6 @@ public class SingleRecipeActivity extends AppCompatActivity {
     int slideshow_current_image = 0;
     int recipeId;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -330,6 +329,9 @@ public class SingleRecipeActivity extends AppCompatActivity {
                 if (recipe != null)
                     recipe.share(activity);
                 return true;
+            case R.id.timer:
+                recipe.startTimerActivity(activity,10*60);
+//                startTimerActivity(10*60);
             default:
                 return super.onOptionsItemSelected(item);
         }

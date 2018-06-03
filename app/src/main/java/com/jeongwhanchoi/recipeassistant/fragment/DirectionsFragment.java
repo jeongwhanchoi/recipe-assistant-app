@@ -1,6 +1,9 @@
 package com.jeongwhanchoi.recipeassistant.fragment;
 
+import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.provider.AlarmClock;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -22,6 +25,7 @@ public class DirectionsFragment extends Fragment {
     WebView webViewDirections;
     TextView difficulty_textview, preperationTime_textview, cookingTime_textview;
     int recipeId;
+    int time;
 
     /**
      * Required empty public constructor
@@ -70,6 +74,35 @@ public class DirectionsFragment extends Fragment {
         return rootView;
     }
 
+    /* Timer
+    * */
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+
+        //load recipe
+        Recipe.loadRecipe(getActivity(), recipeId, new Recipe.onRecipeDownloadedListener() {
+            @Override
+            public void onRecipeDownloaded(Recipe recipe) {
+                time = recipe.cook_time;
+            }
+        });
+
+        cookingTime_textview.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                if(time > 0)
+                {
+                    startTimerActivity(time* 60);
+//                startTimerActivity(10 * 60);
+                }
+            }
+        });
+
+    }
+
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
         super.onSaveInstanceState(savedInstanceState);
@@ -87,5 +120,21 @@ public class DirectionsFragment extends Fragment {
         webViewDirections.destroy();
     }
 
+    private void startTimerActivity(int length)
+    {
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT)
+        {
+            try
+            {
+                Intent intent = new Intent(AlarmClock.ACTION_SET_TIMER);
+                intent.putExtra(AlarmClock.EXTRA_LENGTH, length);
+                startActivity(intent);
+            }
+            catch(android.content.ActivityNotFoundException e)
+            {
+                // can't start activity
+            }
+        }
+    }
 
 }

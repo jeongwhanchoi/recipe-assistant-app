@@ -4,7 +4,9 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.provider.AlarmClock;
 import android.support.v4.app.FragmentActivity;
 import android.util.Log;
 
@@ -548,6 +550,24 @@ public class Recipe {
         sendIntent.putExtra(Intent.EXTRA_TEXT, activity.getResources().getString(R.string.share_message) + " " + Configurations.DEEP_LINK_TO_SHARE + "/" + id);
         sendIntent.setType("text/plain");
         activity.startActivity(Intent.createChooser(sendIntent, "Share via"));
+    }
+
+    public void startTimerActivity(Activity activity, int length)
+    {
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT)
+        {
+            try
+            {
+                length = cook_time;
+                Intent intent = new Intent(AlarmClock.ACTION_SET_TIMER);
+                intent.putExtra(AlarmClock.EXTRA_LENGTH, length);
+                activity.startActivity(intent);
+            }
+            catch(android.content.ActivityNotFoundException e)
+            {
+                // can't start activity
+            }
+        }
     }
 
 }
