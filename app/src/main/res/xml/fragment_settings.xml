@@ -11,4 +11,12 @@
             android:summary="@string/pref_enable_push_notifications_summery"
             android:title="@string/pref_enable_push_notifications_title" />
 
+        <CheckBoxPreference
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:defaultValue="true"
+            android:key="pref_enable_column"
+            android:summary="@string/pref_enable_summary"
+            android:title="@string/pref_enable_title" />
+
 </PreferenceScreen>

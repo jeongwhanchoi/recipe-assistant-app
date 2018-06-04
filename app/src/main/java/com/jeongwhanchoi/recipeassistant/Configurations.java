@@ -18,7 +18,7 @@ public class Configurations {
 
     //LIST TYPE------------------------------------------------------------------------------------
     public final static int LIST_FULLWIDTH = 0, LIST_2COLUMNS = 1;
-    public final static int LIST_MENU_TYPE = LIST_2COLUMNS;
+    public static int LIST_MENU_TYPE = LIST_2COLUMNS;
 
 
     //CATEGORIES------------------------------------------------------------------------------------
