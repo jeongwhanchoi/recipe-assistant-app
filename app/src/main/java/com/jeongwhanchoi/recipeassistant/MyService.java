@@ -73,7 +73,7 @@ public class MyService extends Service {
             Notifi_M.notify( 777 , Notifi);
 
             //토스트 띄우기
-            Toast.makeText(MyService.this, "Finish?", Toast.LENGTH_LONG).show();
+//            Toast.makeText(MyService.this, "Finish?", Toast.LENGTH_LONG).show();
         }
     };
 }

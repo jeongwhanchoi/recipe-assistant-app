@@ -558,7 +558,7 @@ public class Recipe {
         {
             try
             {
-                length = cook_time;
+                length = cook_time*60;
                 Intent intent = new Intent(AlarmClock.ACTION_SET_TIMER);
                 intent.putExtra(AlarmClock.EXTRA_LENGTH, length);
                 activity.startActivity(intent);
