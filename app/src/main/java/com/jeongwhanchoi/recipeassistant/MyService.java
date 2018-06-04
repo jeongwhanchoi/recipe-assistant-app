@@ -10,6 +10,7 @@ import android.os.Handler;
 import android.os.IBinder;
 import android.widget.Toast;
 
+import com.jeongwhanchoi.recipeassistant.activity.MainActivity;
 import com.jeongwhanchoi.recipeassistant.fragment.DirectionsFragment;
 
 public class MyService extends Service {
@@ -47,16 +48,17 @@ public class MyService extends Service {
     class myServiceHandler extends Handler {
         @Override
         public void handleMessage(android.os.Message msg) {
-            Intent intent = new Intent(MyService.this, DirectionsFragment.class);
+            Intent intent = new Intent(MyService.this, MainActivity.class);
             PendingIntent pendingIntent = PendingIntent.getActivity(MyService.this, 0, intent,PendingIntent.FLAG_UPDATE_CURRENT);
 
             Notifi = new Notification.Builder(getApplicationContext())
-                    .setContentTitle("Content Title")
-                    .setContentText("Content Text")
+                    .setContentTitle("Cooking Time")
+                    .setContentText("Time's Up")
                     .setSmallIcon(R.drawable.ic_launcher)
-                    .setTicker("알림!!!")
+                    .setTicker("Time's Up!!!")
                     .setContentIntent(pendingIntent)
                     .build();
+
 
             //소리추가
             Notifi.defaults = Notification.DEFAULT_SOUND;
